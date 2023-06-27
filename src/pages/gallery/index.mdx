@@ -9,6 +9,7 @@ description:
 
 import { imageGalleryContainer } from './Gallery.module.scss';
 import GalleryVideo from '../../components/GalleryVideo';
+import MediaPlayer from '../../components/MediaPlayer';
 
 import AIOS from './videos/AI_OS_Animation_03.mp4';
 import ibmIx from './videos/IBM_iX_Ambient_Animation_03_5.mp4';
@@ -76,18 +77,14 @@ visible should contribute to the correct total statement.” — Eliot Noyes
 
 </ImageGalleryImage>
 <ImageGalleryImage alt="IBM Cloud" title="IBM Cloud" col={8}>
+<MediaPlayer color="dark" type="gif">
 
-
-<GifPlayer color="dark">
-
-
-![IBM Cloud](../images/IBM_Cloud_Platform_Prototype.gif)
+![IBM Cloud](../images/IBM_Cloud_Pictograms.gif)
 ![IBM Cloud](../images/IBM_Cloud_Platform_Prototype.jpg)
 
-</GifPlayer>
-
-
+</MediaPlayer>
 </ImageGalleryImage>
+
 <ImageGalleryImage alt="IBM Cloud" title="IBM Cloud" col={4}>
 
 
@@ -265,8 +262,12 @@ visible should contribute to the correct total statement.” — Eliot Noyes
 </ImageGalleryImage>
 <ImageGalleryImage alt="Watson" title="Watson" col={4}>
 
+<MediaPlayer>
 
 <GalleryVideo src={AIOS} poster={AIOSPoster} />
+![Watson Iot HQ](../images/IBM_Watson_IoT_HQ.jpg)
+
+</MediaPlayer>
 
 </ImageGalleryImage>
 <ImageGalleryImage alt="With Watson" title="With Watson" col={8}>
