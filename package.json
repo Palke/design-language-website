@@ -27,7 +27,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "lint:styles": "stylelint \"src/**/*.scss\" --fix",
-    "build": "gatsby build",
+    "build": "gatsby build --prefix-paths",
     "build:prefix": "gatsby clean && gatsby build --prefix-paths && yarn move-public",
     "build:analyze": "gatsby clean && ANALYZE=true yarn build",
     "build:svgs": "svgo -r -f ./src/images/app-icons",
